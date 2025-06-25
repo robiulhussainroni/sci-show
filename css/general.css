@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  background-color: #e3ffb3;
+  color: #001933;
+}
+
+header {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 6.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  text-align: center;
+}
+
+span {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #003166;
+}
+
+p {
+  margin-top: 3.6rem;
+  margin-bottom: 4.8rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 11px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
+  transform: scale(1.1);
+}
+
+.btn:active {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.03);
+  transform: scale(1);
+  border-radius: 7px;
+}
+
+.primary-btn:link,
+.primary-btn:visited {
+  margin-bottom: 1.2rem;
+  border: 2px solid #007bff;
+  background-color: #e6f2ff;
+  color: #001933;
+  font-weight: 700;
+}
+
+.secondary-btn:link,
+.secondary-btn:visited {
+  border: 2px solid #e6f2ff;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 2.4rem;
+  color: #007bff;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  animation: icons 5s ease-in-out 5;
+}
+
+@keyframes icons {
+  25% {
+    transform: scale(1.05);
+    transform: rotate(25deg);
+  }
+
+  50% {
+    transform: scale(1.1);
+    transform: rotate(50deg);
+  }
+
+  75% {
+    transform: scale(1.15);
+    transform: rotate(75deg);
+  }
+
+  100% {
+    transform: scale(1.17);
+    transform: rotate(75deg);
+  }
+}
+
+.icon:hover {
+  transform: rotate(90deg);
+}
+
+.left-top-icon:hover,
+.bottom-left-icon:hover {
+  transform: rotate(180deg);
+}
+
+.left-top-icon {
+  left: -45px;
+  top: 50px;
+  transform: rotate(45deg);
+}
+
+.right-top-icon {
+  right: -45px;
+  top: 50px;
+  transform: rotate(-45deg);
+}
+
+.bottom-left-icon {
+  bottom: 0;
+  left: -45px;
+  transform: rotate(45deg);
+}
+
+.bottom-right-icon {
+  bottom: 0;
+  right: -45px;
+  transform: rotate(-45deg);
+}
